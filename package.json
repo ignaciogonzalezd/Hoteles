@@ -4,7 +4,8 @@
   "description": "Nuestro primer proyecto de Nodejs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    	  "dev": "lite-server",
+	  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -12,5 +13,8 @@
   },
   "author": "Ignacio Gonzalez D",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ignaciogonzalezd/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/ignaciogonzalezd/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
