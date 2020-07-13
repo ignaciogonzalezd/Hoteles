@@ -94,7 +94,8 @@
             <div class=" card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img src="images/image-1.jpg" class="card-img-top" alt="Responsive image">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Buenos Aires</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Las primeras reservas cuentan con clases de tango gratis">Hotel Buenos Aires</h5>
                     <h6 class="card-subtitle text-muted">Argentina</h6>
                     <p class="card-text">Hotel ubicado en pleno centro.</p>
                 </div>
@@ -152,7 +153,8 @@
                     <h5 class="card-title">Hotel San Pablo</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro</p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
@@ -220,6 +222,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Scrip para que funcionen los tooltip-->
+    <script>
+        $(function() {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
 </body>
 
 </html>
