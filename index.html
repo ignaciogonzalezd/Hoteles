@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- build:css dist/index.css -->
+    <!-- build:css css/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
@@ -274,39 +274,11 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- build:js dist/index.js -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Scrip para que funcionen los tooltip, popover y carousel-->
-    <script>
-        $(function () {
-            $("[data-toggle='tooltip']").tooltip();
-            $("[data-toggle='popover']").popover();
-            $('.carousel').carousel({
-                interval: 2000
-            });
-
-            $('#contactoBtn').on('show.bs.modal', function (e) {
-                console.log('el modal contacto se está mostrando');
-
-                $('#contactoBtn').removeClass('btn-otline-success');
-                $('#contactoBtn').addClass('btn-primary');
-                $('#contactoBtn').prop('disabled', true);
-            })
-            $('#contactoBtn').on('shown.bs.modal', function (e) {
-                console.log('el modal contacto se mostró');
-            })
-            $('#contactoBtn').on('hide.bs.modal', function (e) {
-                console.log('el modal contacto se oculta');
-            })
-            $('#contactoBtn').on('hidden.bs.modal', function (e) {
-                console.log('el modal contacto se ocultó');
-                $('#contactoBtn').prop('disabled' false);
-            })
-        });
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
 </body>
 
